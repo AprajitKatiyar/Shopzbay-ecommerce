@@ -1,3 +1,4 @@
+require('dotenv').config();
 module.exports = {
-  database: "mongodb+srv://lootmaal:1234@cluster0-oavgc.mongodb.net/shoppingDB"
+  database: process.env.URL
 }

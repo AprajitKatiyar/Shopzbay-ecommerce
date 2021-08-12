@@ -1,3 +1,4 @@
+require('dotenv').config();
 var express = require("express");
 var path = require("path");
 var bodyParser = require("body-parser");
@@ -9,7 +10,6 @@ var passport = require("passport");
 const { check, oneOf, validationResult } = require('express-validator');
 
 var config = require("./config/database");
-
 
 var app = express();
 app.set('view engine', 'ejs');
@@ -48,7 +48,7 @@ app.use(fileUpload());
 
 // Express session
 app.use(session({
-  secret: 'Oue little secret',
+  secret: process.env.SECRET,
   resave: true,
   saveUninitialized: true
 //  cookie: {secure:true}
