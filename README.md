@@ -1,5 +1,5 @@
 # ShopZbay
-> This website resembles a real store where users can add products to the cart from different categories available and proceeed to checkout.
+> This website resembles a real store where users can add products to the cart from different categories available and proceed to checkout.
 - Worked on the backend of a ecommerce website using NodeJS, ExpressJS, and
 MongoDB.
 - Worked on user authentication using Passport.js,cart checkout and admin
